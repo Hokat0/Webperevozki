@@ -15,7 +15,7 @@ body {
 
 /* Стили для шапки (header) */
 .header {
-    background: url('Img/Maz.jpg') no-repeat center center/cover; /*  Замените 'truck_background.jpg' на реальный путь к изображению */
+    background: url('Img/Maz.JPG') no-repeat center center/cover; /*  Замените 'truck_background.jpg' на реальный путь к изображению */
     color: #fff;
     padding: 100px 0;
     text-align: center;
