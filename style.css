@@ -1,102 +1,149 @@
+/* Общие стили */
 body {
+    font-family: sans-serif;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f2f2f2;
+    padding: 0;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-.navbar {
-    background-color: #444;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-.nav-links {
-    display: flex;
-    justify-content: center;
+/* Стили для шапки (header) */
+.header {
+    background: url('truck_background.jpg') no-repeat center center/cover; /*  Замените 'truck_background.jpg' на реальный путь к изображению */
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.nav {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-list {
     list-style: none;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
-.nav-links li {
-    margin: 0 15px;
+.nav-item {
+    display: inline;
+    margin: 0 20px;
 }
 
-.nav-links a {
+.nav-link {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
 }
 
-.hero {
-    text-align: center;
-    padding: 120px 20px 60px;
-    background-color: #f2f2f2;
+.header-content {
+    margin-top: 50px;
 }
 
-.hero h1 {
-    font-size: 48px;
-    color: #111;
+.header-title {
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
-.hero h2 {
-    font-size: 24px;
-    color: #666;
-}
-
-.hero p {
-    font-size: 16px;
+.header-subtitle {
+    font-size: 1.5em;
     margin-bottom: 20px;
-    color: #555;
 }
 
-.phone-button {
+.header-phone {
     display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 14px 24px;
-    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
     font-weight: bold;
 }
 
-section {
-    padding: 60px 20px;
-    max-width: 800px;
+/* Стили для раздела отзывов */
+.reviews {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.reviews-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 80%;
     margin: 0 auto;
 }
 
-h2 {
-    font-size: 28px;
+.review-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.review-avatar {
+    font-size: 2em;
     margin-bottom: 10px;
-    color: #222;
+    color: #777; /* Цвет иконки пользователя */
 }
 
-ul {
-    padding-left: 20px;
+.review-info {
+    /* Стили для информации об отзыве */
 }
 
+.review-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.review-rating {
+    color: #ffc107; /* Цвет звезд рейтинга */
+    margin-bottom: 10px;
+}
+
+.review-text {
+    line-height: 1.6;
+}
+
+/* Стили для подвала */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Адаптивные стили */
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 36px;
+    .header {
+        padding: 50px 0;
     }
-
-    .nav-links {
-        flex-direction: column;
+    .header-title {
+        font-size: 2.5em;
     }
-
-    .nav-links li {
-        margin: 10px 0;
+    .header-subtitle {
+        font-size: 1.2em;
     }
-
-    .phone-button {
-        width: 80%;
-        font-size: 18px;
+    .reviews-container {
+        grid-template-columns: 1fr;
     }
 }
