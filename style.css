@@ -19,6 +19,13 @@ body {
     color: #fff;
     padding: 100px 0;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Чтобы шапка была поверх остального контента */
+    background: url('Img/Maz.JPG') no-repeat center center/cover;
+}
 }
 
 .nav {
