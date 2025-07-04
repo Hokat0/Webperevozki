@@ -3,56 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Грузоперевозки — Виктор Никитин</title>
+    <title>Грузоперевозки Виктор Никитин</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#prices">Цены</a></li>
-                <li><a href="#reviews">Отзывы</a></li>
-                <li><a href="#contacts">Контакты</a></li>
+
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Цены</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
             </ul>
         </nav>
-        <div class="hero">
-            <h1>Грузоперевозки</h1>
-            <h2>Виктор Никитин</h2>
-            <p>Надежно. Быстро. По России.</p>
-            <a class="phone-button" href="tel:+79516309997">+7 (951) 630-99-97</a>
+        <div class="header-content">
+            <h1 class="header-title">ГРУЗОПЕРЕВОЗКИ Виктор Никитин</h1>
+            <p class="header-subtitle">Грузовые перевозки по России</p>
+            <a href="tel:+79991234567" class="header-phone">+7 999 123-45-67</a>
         </div>
     </header>
 
-    <section id="about">
-        <h2>О нас</h2>
-        <p>Мы — команда профессионалов в сфере грузоперевозок. Работаем по всей России с 2012 года. Гарантируем пунктуальность, безопасность и честные цены.</p>
+    <section id="otzyvy" class="reviews">
+        <h2 class="reviews-title">Отзывы</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="review-avatar"><i class="fas fa-user"></i></div>
+                <div class="review-info">
+                    <h3 class="review-name">Иван</h3>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">Профессионалиам, Сцет бога профессионали. Преобомно вьтолчепа неполнельйо.</p>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-avatar"><i class="fas fa-user"></i></div>
+                <div class="review-info">
+                    <h3 class="review-name">Сергей</h3>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">Профессионалиам, превронатию. Все провехиназ, принтка. Все доставка во время и огтачильно.</p>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-avatar"><i class="fas fa-user"></i></div>
+                <div class="review-info">
+                    <h3 class="review-name">Елена</h3>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">Оцень, доп п-оставилы Вся професеионалиам, Работалосы и огличный.</p>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-avatar"><i class="fas fa-user"></i></div>
+                <div class="review-info">
+                    <h3 class="review-name">Сетена</h3>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">Пазз грусфодольно Выстро. При перехоле в оформленной документе.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="services">
-        <h2>Услуги</h2>
-        <ul>
-            <li>Квартирные и офисные переезды</li>
-            <li>Доставка по России и СНГ</li>
-            <li>Услуги грузчиков</li>
-        </ul>
-    </section>
+    <footer class="footer">
+        <p>&copy; 2023 Грузоперевозки Виктор Никитин</p>
+    </footer>
 
-    <section id="prices">
-        <h2>Цены</h2>
-        <p>Цены рассчитываются индивидуально. Оставьте заявку или позвоните нам для расчета.</p>
-    </section>
-
-    <section id="reviews">
-        <h2>Отзывы</h2>
-        <p>Отзывы от реальных клиентов доступны в Яндекс Картах и 2ГИС.</p>
-    </section>
-
-    <section id="contacts">
-        <h2>Контакты</h2>
-        <p>Телефон: <a href="tel:+79516309997">+7 (951) 630-99-97</a></p>
-        <p>Email: viktor@gruz-nikitin.ru</p>
-    </section>
 </body>
 </html>
