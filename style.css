@@ -1,4 +1,4 @@
-/* Общие стили */
+/* Общие стили (остаются прежними) */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -15,27 +15,22 @@ body {
 
 /* Стили для шапки (header) */
 .header {
-    background: url('Img/Maz.JPG') no-repeat center center/cover; /*  Замените 'truck_background.jpg' на реальный путь к изображению */
+    /*background: url('truck_background.jpg') no-repeat center center/cover; /* Фон перенесен в header-content */
     color: #fff;
-    padding: 100px 0;
     text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100; /* Чтобы шапка была поверх остального контента */
-    background: url('Img/Maz.JPG') no-repeat center center/cover;
-}
+    /* padding: 100px 0;  Убрано, теперь это в header-content */
 }
 
 .nav {
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 10px 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 100;
+    /*background: url('Img/Maz.JPG') no-repeat center center/cover;  Убрано, т.к. фон будет в header-content */
 }
 
 .nav-list {
@@ -57,8 +52,12 @@ body {
 }
 
 .header-content {
-    margin-top: 50px;
+    /*  Добавляем фон и padding для header-content  */
+    background: url('Img/Maz.JPG') no-repeat center center/cover;
+    padding: 100px 0; /*  Как было раньше у .header */
+    margin-top: 70px; /*  Чтобы не перекрывалось с фиксированной навигацией. Рассчитывайте высоту nav + margin */
 }
+
 
 .header-title {
     font-size: 3em;
@@ -141,8 +140,8 @@ body {
 
 /* Адаптивные стили */
 @media (max-width: 768px) {
-    .header {
-        padding: 50px 0;
+    .header-content {
+        padding: 50px 0;  /* Адаптируем padding header-content */
     }
     .header-title {
         font-size: 2.5em;
@@ -153,4 +152,17 @@ body {
     .reviews-container {
         grid-template-columns: 1fr;
     }
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+.logo {
+    float: left;
+    padding: 5px;
+}
+
+.nav {
+    overflow: hidden;
 }
