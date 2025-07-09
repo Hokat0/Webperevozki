@@ -178,7 +178,7 @@ body {
     }
 
     .nav-list.active {
-        display: flex;  /* Показывать меню, когда класс active добавлен */
+        display: block;  /* Показывать меню, когда класс active добавлен */
     }
 
     .nav {
