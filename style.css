@@ -1,216 +1,152 @@
-/* Общие стили (остаются прежними) */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* Стили для шапки (header) */
-.header {
-    /*background: url('truck_background.jpg') no-repeat center center/cover; /* Фон перенесен в header-content */
-    color: #fff;
-    text-align: center;
-    /* padding: 100px 0;  Убрано, теперь это в header-content */
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 .nav {
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    /*background: url('Img/Maz.JPG') no-repeat center center/cover;  Убрано, т.к. фон будет в header-content */
-}
-
-.nav-list {
-    display: none; /* Скрываем список навигации */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.hamburger {
-    display: none; /* Скрываем кнопку по умолчанию на больших экранах */
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.5em;
-    cursor: pointer;
-    padding: 0;
-}
-
-.nav-item {
-    display: inline;
-    margin: 0 20px;
-}
-
-.nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.header-content {
-    /*  Добавляем фон и padding для header-content  */
-    background: url('Img/Maz.JPG') no-repeat center center/cover;
-    padding: 100px 0; /*  Как было раньше у .header */
-    margin-top: 70px; /*  Чтобы не перекрывалось с фиксированной навигацией. Рассчитывайте высоту nav + margin */
-}
-
-
-.header-title {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-.header-subtitle {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-.header-phone {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-/* Стили для раздела отзывов */
-.reviews {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.reviews-title {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-}
-
-.reviews-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.review-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.review-avatar {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #777; /* Цвет иконки пользователя */
-}
-
-.review-info {
-    /* Стили для информации об отзыве */
-}
-
-.review-name {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
-
-.review-rating {
-    color: #ffc107; /* Цвет звезд рейтинга */
-    margin-bottom: 10px;
-}
-
-.review-text {
-    line-height: 1.6;
-}
-
-/* Стили для подвала */
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Медиа-запрос для маленьких экранов */
-@media (max-width: 768px) {
-    .nav-list {
-        display: none; /* По умолчанию скрываем меню */
-        flex-direction: column; /* Выстраиваем элементы вертикально */
-        position: absolute; /* Абсолютное позиционирование, чтобы выпадающее меню не влияло на остальную верстку */
-        top: 100%; /* Размещаем меню под навигацией */
-        left: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.9); /* Темный фон для меню */
-        text-align: center;
-        padding: 10px 0;
-        z-index: 99; /* Убедитесь, что меню выше другого контента */
-    }
-
-    .nav-item {
-        display: block; /* Каждый элемент в отдельной строке */
-        margin: 10px 0;
-    }
-
-    .hamburger {
-        display: block; /* Показываем кнопку гамбургер-меню */
-        position: absolute; /* Размещаем кнопку справа */
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%); /* Центрируем кнопку по вертикали */
-    }
-
-    .nav-list.active {
-        display: block;  /* Показывать меню, когда класс active добавлен */
-    }
-
-    .nav {
-        position: relative; /* Устанавливаем позиционирование для .nav */
-    }
-}
-
-/* Адаптивные стили */
-@media (max-width: 768px) {
-    .header-content {
-        padding: 50px 0;  /* Адаптируем padding header-content */
-    }
-    .header-title {
-        font-size: 2.5em;
-    }
-    .header-subtitle {
-        font-size: 1.2em;
-    }
-    .reviews-container {
-        grid-template-columns: 1fr;
-    }
+  background: black;
+  color: white;
+  padding: 10px;
+  position: relative;
 }
 
 .logo img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
-.logo {
-    float: left;
-    padding: 5px;
+.hamburger {
+  display: none;
 }
 
-.nav {
-    overflow: hidden;
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 10px 0;
+    z-index: 99;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}
+
+.header-content {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('Img/Maz.JPG') no-repeat center center/cover;
+  color: white;
+}
+
+.header-title {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.header-subtitle {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.header-phone {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.reviews {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.reviews-title {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.review-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.review-avatar {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.review-name {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.review-rating {
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.review-text {
+  line-height: 1.6;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
