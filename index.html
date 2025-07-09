@@ -1,90 +1,83 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Грузоперевозки Виктор Никитин</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Грузоперевозки Виктор Никитин</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
 
-    <header class="header">
-        <nav class="nav">
-            <a href="#" class="logo"><img src="Img/IMG_0674.png" alt="Логотип" width="100"></a>
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo"><img src="Img/IMG_0674.png" alt="Логотип" width="100" /></a>
+      <button class="hamburger"><i class="fas fa-bars"></i></button>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Цены</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+      </ul>
+    </nav>
 
-            <button class="hamburger">
-                <i class="fas fa-bars"></i>
-            </button>
+    <div class="header-content">
+      <h1 class="header-title">ГРУЗОПЕРЕВОЗКИ Виктор Никитин</h1>
+      <p class="header-subtitle">Грузовые перевозки по России</p>
+      <a href="tel:+79516309997" class="header-phone">+7 (951) 630-99-97</a>
+    </div>
+  </header>
 
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Цены</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <div class="header-content">
-            <h1 class="header-title">ГРУЗОПЕРЕВОЗКИ Виктор Никитин</h1>
-            <p class="header-subtitle">Грузовые перевозки по России</p>
-            <a href="tel:+79516309997" class="header-phone">+7 (951) 630-99-97</a>
+  <section id="otzyvy" class="reviews">
+    <h2 class="reviews-title">Отзывы</h2>
+    <div class="reviews-container">
+      <div class="review-card">
+        <div class="review-avatar"><i class="fas fa-user"></i></div>
+        <div class="review-info">
+          <h3 class="review-name">Иван</h3>
+          <div class="review-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">Профессионал.</p>
         </div>
-    </header>
-
-    <section id="otzyvy" class="reviews">
-        <h2 class="reviews-title">Отзывы</h2>
-        <div class="reviews-container">
-            <div class="review-card">
-                <div class="review-avatar"><i class="fas fa-user"></i></div>
-                <div class="review-info">
-                    <h3 class="review-name">Иван</h3>
-                    <div class="review-rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="review-text">Профессионал.</p>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div class="review-avatar"><i class="fas fa-user"></i></div>
-                <div class="review-info">
-                    <h3 class="review-name">Сергей</h3>
-                    <div class="review-rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="review-text">Выполнено в лучшем виде.</p>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div class="review-avatar"><i class="fas fa-user"></i></div>
-                <div class="review-info">
-                    <h3 class="review-name">Елена</h3>
-                    <div class="review-rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="review-text">Прекрасно доставили.</p>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div class="review-avatar"><i class="fas fa-user"></i></div>
-                <div class="review-info">
-                    <h3 class="review-name">Сетена</h3>
-                    <div class="review-rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="review-text">Все точно и в срок.</p>
-                </div>
-            </div>
+      </div>
+      <div class="review-card">
+        <div class="review-avatar"><i class="fas fa-user"></i></div>
+        <div class="review-info">
+          <h3 class="review-name">Сергей</h3>
+          <div class="review-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">Выполнено в лучшем виде.</p>
         </div>
-    </section>
+      </div>
+      <div class="review-card">
+        <div class="review-avatar"><i class="fas fa-user"></i></div>
+        <div class="review-info">
+          <h3 class="review-name">Елена</h3>
+          <div class="review-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">Прекрасно доставили.</p>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-avatar"><i class="fas fa-user"></i></div>
+        <div class="review-info">
+          <h3 class="review-name">Сетена</h3>
+          <div class="review-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">Все точно и в срок.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer class="footer">
-        <p>&copy; 2023 Грузоперевозки Виктор Никитин</p>
-    </footer>
+  <footer class="footer">
+    <p>&copy; 2023 Грузоперевозки Виктор Никитин</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
