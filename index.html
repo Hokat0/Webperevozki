@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Грузоперевозки Виктор Никитин</title>
+  <title>Грузоперевозки Виктор Никитin</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css " />
 </head>
 <body>
 
@@ -14,20 +14,44 @@
       <a href="#" class="logo"><img src="Img/IMG_0674.png" alt="Логотип" width="100" /></a>
       <button class="hamburger"><i class="fas fa-bars"></i></button>
       <ul class="nav-list">
-        <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Цены</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+        <li class="nav-item"><a href="#uslugi" class="nav-link">Услуги</a></li>
+        <li class="nav-item"><a href="#otzyvy" class="nav-link">Отзывы</a></li>
+        <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
       </ul>
     </nav>
-
     <div class="header-content">
       <h1 class="header-title">ГРУЗОПЕРЕВОЗКИ Виктор Никитин</h1>
       <p class="header-subtitle">Грузовые перевозки по России</p>
       <a href="tel:+79516309997" class="header-phone">+7 (951) 630-99-97</a>
+      <p class="cta-text">Быстрая доставка — от 300 ₽ за км</p>
     </div>
   </header>
 
+  <!-- Услуги -->
+  <section id="uslugi" class="services">
+    <div class="container">
+      <h2>Наши услуги</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-truck fa-2x"></i>
+          <h3>Перевозка по РФ</h3>
+          <p>Доставка грузов в любой город России</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-box-open fa-2x"></i>
+          <h3>Погрузка/разгрузка</h3>
+          <p>Профессиональная помощь при погрузке</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-shield-alt fa-2x"></i>
+          <h3>Страхование груза</h3>
+          <p>Гарантия сохранности вашего груза</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
   <section id="otzyvy" class="reviews">
     <h2 class="reviews-title">Отзывы</h2>
     <div class="reviews-container">
@@ -74,10 +98,31 @@
     </div>
   </section>
 
+  <!-- Контакты -->
+  <section id="contacts" class="contacts">
+    <div class="container">
+      <h2>Свяжитесь с нами</h2>
+      <p>Закажите бесплатный расчет стоимости перевозки</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Ваше имя" required />
+        <input type="tel" placeholder="Ваш телефон" required />
+        <textarea placeholder="Описание груза и маршрута"></textarea>
+        <button type="submit">Отправить запрос</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Футер -->
   <footer class="footer">
     <p>&copy; 2023 Грузоперевозки Виктор Никитин</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- JS для меню -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('.nav-list').classList.toggle('active');
+    });
+  </script>
+
 </body>
 </html>
