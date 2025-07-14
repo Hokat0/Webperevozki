@@ -8,25 +8,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css " />
 </head>
 <body>
-  <!-- Шапка -->
+
+  <!-- Шапка сайта -->
   <header class="header">
     <nav class="nav">
       <a href="#" class="logo"><img src="Img/IMG_0674.png" alt="Логотип" width="100" /></a>
-      <button class="hamburger"><i class="fas fa-bars"></i></button>
+      <div class="nav-right">
+        <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+        <button class="hamburger"><i class="fas fa-bars"></i></button>
+      </div>
       <ul class="nav-list">
         <li class="nav-item"><a href="#uslugi" class="nav-link">Услуги</a></li>
         <li class="nav-item"><a href="#otzyvy" class="nav-link">Отзывы</a></li>
         <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
       </ul>
-      <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
     </nav>
-    <div class="header-content">
-      <h1 class="header-title">ГРУЗОПЕРЕВОЗКИ Виктор Никитин</h1>
-      <p class="header-subtitle">Грузовые перевозки по России</p>
-      <a href="tel:+79516309997" class="header-phone">+7 (951) 630-99-97</a>
+  </header>
+
+  <!-- Секция героя -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">ГРУЗОПЕРЕВОЗКИ Виктор Никитин</h1>
+      <p class="hero-subtitle">Грузовые перевозки по России</p>
+      <a href="tel:+79516309997" class="hero-phone">+7 (951) 630-99-97</a>
       <p class="cta-text">Быстрая доставка — от 300 ₽ за км</p>
     </div>
-  </header>
+  </section>
 
   <!-- Услуги -->
   <section id="uslugi" class="services">
@@ -113,37 +120,12 @@
     </div>
   </section>
 
-  <!-- Футер -->
+  <!-- Подвал -->
   <footer class="footer">
     <p>&copy; 2023 Грузоперевозки Виктор Никитин</p>
   </footer>
 
-  <!-- JS для меню и темной темы -->
-  <script>
-    // Переключение темы
-    const themeToggle = document.getElementById('theme-toggle');
-
-    if (localStorage.getItem('theme') === 'dark') {
-      document.body.classList.add('dark-theme');
-      themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-    }
-
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-theme');
-
-      if (document.body.classList.contains('dark-theme')) {
-        localStorage.setItem('theme', 'dark');
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-      } else {
-        localStorage.removeItem('theme');
-        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-      }
-    });
-
-    // Адаптивное меню
-    document.querySelector('.hamburger').addEventListener('click', () => {
-      document.querySelector('.nav-list').classList.toggle('active');
-    });
-  </script>
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
