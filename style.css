@@ -14,14 +14,26 @@ body {
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.5;
+  padding-top: 120px; /* Под шапку */
 }
 
-/* Навигация */
+/* === Шапка сайта === */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: black;
+}
+
 .nav {
   background: black;
   color: white;
   padding: 10px 20px;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo img {
@@ -30,6 +42,23 @@ body {
 
 .hamburger {
   display: none;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+.theme-toggle i {
+  color: white;
 }
 
 .nav-list {
@@ -51,15 +80,15 @@ body {
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
     font-size: 24px;
     background: none;
     color: white;
     border: none;
     cursor: pointer;
+  }
+
+  .nav-right {
+    gap: 20px;
   }
 
   .nav-list {
@@ -90,49 +119,44 @@ body {
   }
 }
 
-/* Герой */
-.header-content {
-  text-align: center;
-  padding: 100px 20px 80px;
-  background: url('Img/Maz.JPG') no-repeat center center/cover;
+/* === Герой === */
+.hero {
+  background: url('Img/Maz.JPG') no-repeat center center / cover;
   color: white;
+  padding: 120px 20px 100px;
+  text-align: center;
   position: relative;
 }
 
-.header-content::before {
+.hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
-.header-title,
-.header-subtitle,
-.header-phone,
-.cta-text {
+.hero-content {
   position: relative;
   z-index: 2;
 }
 
-.header-title {
-  font-size: 2.5em;
+.hero-title {
+  font-size: 3em;
   margin-bottom: 10px;
 }
 
-.header-subtitle {
-  font-size: 1.2em;
+.hero-subtitle {
+  font-size: 1.5em;
   margin-bottom: 20px;
 }
 
-.header-phone {
+.hero-phone {
   display: inline-block;
   background-color: #fff;
   color: #333;
-  padding: 12px 24px;
+  padding: 15px 30px;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -140,13 +164,13 @@ body {
 }
 
 .cta-text {
-  font-size: 1em;
-  margin-top: 10px;
-  font-weight: normal;
+  font-size: 1.2em;
+  margin-top: 15px;
+  font-weight: bold;
   display: block;
 }
 
-/* Услуги */
+/* === Услуги === */
 .services {
   padding: 60px 20px;
   background-color: #fff;
@@ -163,13 +187,13 @@ body {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .service-card {
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -181,36 +205,33 @@ body {
 
 .service-card i {
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-/* Отзывы */
+/* === Отзывы === */
 .reviews {
-  padding: 50px 20px;
-  text-align: center;
+  padding: 60px 20px;
   background-color: #fff;
+  text-align: center;
 }
 
 .reviews-title {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 2.5em;
+  margin-bottom: 30px;
 }
 
 .reviews-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  width: 100%;
-  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 80%;
   margin: 0 auto;
-  padding: 0 10px;
-  box-sizing: border-box;
 }
 
 .review-card {
   background-color: #fff;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition: transform 0.3s ease;
@@ -227,7 +248,7 @@ body {
 }
 
 .review-name {
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-bottom: 5px;
 }
 
@@ -237,18 +258,18 @@ body {
 }
 
 .review-text {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-/* Контакты */
+/* === Контакты === */
 .contacts {
-  padding: 50px 20px;
+  padding: 60px 20px;
   background-color: #fff;
   text-align: center;
 }
 
 .contact-form {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -257,12 +278,10 @@ body {
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1em;
-  box-sizing: border-box;
 }
 
 .contact-form button {
@@ -279,21 +298,20 @@ body {
   background-color: #555;
 }
 
-/* Футер */
+/* === Подвал === */
 .footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 20px 10px;
+  padding: 20px 0;
   font-size: 0.9em;
 }
 
-/* Темная тема */
+/* === Темная тема === */
 .dark-theme {
   --bg-color: #121212;
   --text-color: #f1f1f1;
   --card-bg: #1e1e1e;
-  --accent-color: #bb86fc;
 }
 
 .dark-theme body {
@@ -303,13 +321,18 @@ body {
 
 .dark-theme .nav,
 .dark-theme .footer {
-  background-color: #1e1e1e;
+  background-color: var(--bg-color);
   color: var(--text-color);
 }
 
-.dark-theme .header-content {
-  background-color: #1e1e1e;
+.dark-theme .hero {
+  background-color: var(--bg-color);
   color: var(--text-color);
+}
+
+.dark-theme .hero-phone {
+  background-color: #fff;
+  color: #333;
 }
 
 .dark-theme .review-card,
@@ -319,16 +342,6 @@ body {
   color: var(--text-color);
 }
 
-.theme-toggle {
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  color: white;
-  position: absolute;
-  right: 20px;
-  top: 15px;
-}
 .dark-theme .theme-toggle {
   color: #fff;
 }
@@ -336,17 +349,17 @@ body {
   color: #fff;
 }
 
-/* Мобильные медиа-запросы */
+/* === Адаптивность === */
 @media (max-width: 768px) {
-  .header-title {
+  .hero-title {
     font-size: 2em;
   }
 
-  .header-subtitle {
+  .hero-subtitle {
     font-size: 1.1em;
   }
 
-  .header-phone,
+  .hero-phone,
   .cta-text {
     font-size: 1em;
   }
@@ -356,8 +369,8 @@ body {
     gap: 20px;
   }
 
-  .reviews-title {
-    font-size: 2em;
+  .reviews-container {
+    width: 90%;
   }
 
   .review-card {
@@ -367,22 +380,5 @@ body {
   .contact-form input,
   .contact-form textarea {
     font-size: 1em;
-  }
-}
-
-/* Тач-оптимизация */
-a, button, .nav-link, .review-card, .service-card {
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: rgba(0,0,0,0.1);
-}
-
-/* Для больших телефонов и планшетов */
-@media (min-width: 480px) and (max-width: 1024px) {
-  .header-title {
-    font-size: 2.5em;
-  }
-
-  .services-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
