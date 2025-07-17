@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Грузоперевозки по России от Виктора Никитина. Быстрая доставка, страхование груза, профессиональная погрузка." />
+  <meta name="keywords" content="грузоперевозки, доставка грузов, Россия, транспортные услуги" />
+  <meta name="author" content="Виктор Никитин" />
+  <meta property="og:title" content="Грузоперевозки Виктор Никитин" />
+  <meta property="og:description" content="Надежные грузоперевозки по России с профессиональной погрузкой и страхованием." />
+  <meta property="og:image" content="Img/Maz.webp" />
+  <meta property="og:url" content="https://YOUR_WEBSITE_URL" />
+  <title>Грузоперевозки Виктор Никитин</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo">
+        <img src="Img/logo-light.webp" alt="Логотип светлый" width="70" class="logo-light" loading="lazy" />
+        <img src="Img/logo-dark.webp" alt="Логотип темный" width="70" class="logo-dark" loading="lazy" />
+      </a>
+      <div class="nav-right">
+        <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+        <button class="hamburger"><i class="fas fa-bars"></i></button>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#uslugi" class="nav-link"><i class="fas fa-truck"></i> Услуги</a></li>
+        <li class="nav-item"><a href="#otzyvy" class="nav-link"><i class="fas fa-star"></i> Отзывы</a></li>
+        <li class="nav-item"><a href="#contacts" class="nav-link"><i class="fas fa-phone"></i> Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Секция героя -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">ГРУЗОПЕРЕВОЗКИ Виктор Никитин</h1>
+      <p class="hero-subtitle">Грузовые перевозки по России</p>
+      <button id="phone-button" class="hero-phone"><i class="fas fa-phone"></i> +7 (951) 630-99-97</button>
+      <p class="cta-text">Быстрая доставка — от 300 ₽ за км</p>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section id="uslugi" class="services">
+    <div class="container">
+      <h2>Наши услуги</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-truck fa-2x"></i>
+          <h3>Перевозка по РФ</h3>
+          <p>Доставка грузов в любой город России</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-box-open fa-2x"></i>
+          <h3>Погрузка/разгрузка</h3>
+          <p>Профессиональная помощь при погрузке</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-shield-alt fa-2x"></i>
+          <h3>Страхование груза</h3>
+          <p>Гарантия сохранности вашего груза</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section id="otzyvy" class="reviews">
+    <h2 class="reviews-title">Отзывы</h2>
+    <div class="reviews-container swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide review-card">
+          <div class="review-avatar"><i class="fas fa-user"></i></div>
+          <div class="review-info">
+            <h3 class="review-name">Иван</h3>
+            <div class="review-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">Профессионал.</p>
+          </div>
+        </div>
+        <div class="swiper-slide review-card">
+          <div class="review-avatar"><i class="fas fa-user"></i></div>
+          <div class="review-info">
+            <h3 class="review-name">Сергей</h3>
+            <div class="review-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">Выполнено в лучшем виде.</p>
+          </div>
+        </div>
+        <div class="swiper-slide review-card">
+          <div class="review-avatar"><i class="fas fa-user"></i></div>
+          <div class="review-info">
+            <h3 class="review-name">Елена</h3>
+            <div class="review-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">Прекрасно доставили.</p>
+          </div>
+        </div>
+        <div class="swiper-slide review-card">
+          <div class="review-avatar"><i class="fas fa-user"></i></div>
+          <div class="review-info">
+            <h3 class="review-name">Сетена</h3>
+            <div class="review-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">Все точно и в срок.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contacts" class="contacts">
+    <div class="container">
+      <h2>Свяжитесь с нами</h2>
+      <p>Закажите бесплатный расчет стоимости перевозки</p>
+      <form class="contact-form" id="contact-form">
+        <input type="text" id="name" placeholder="Ваше имя" required />
+        <input type="tel" id="phone" placeholder="Ваш телефон" required />
+        <textarea id="message" placeholder="Описание груза и маршрута"></textarea>
+        <button type="submit">Отправить запрос</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <p>© 2025 Грузоперевозки Виктор Никитин</p>
+  </footer>
+
+  <!-- Кнопка "Наверх" -->
+  <button class="scroll-top" title="Наверх"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Модальное окно -->
+  <div id="phone-modal" class="modal">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">×</span>
+      <h3>Связаться с нами</h3>
+      <p>Номер телефона: <strong id="phone-number">+7 (951) 630-99-97</strong></p>
+      <button id="call-button" class="modal-button">Позвонить</button>
+      <button id="copy-button" class="modal-button">Копировать номер</button>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
